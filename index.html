@@ -1,1 +1,273 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpy 2025 - Průvodce alpskými středisky</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .info-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .info-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .resorts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .resort-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 5px solid #667eea;
+        }
+
+        .resort-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .resort-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 1.5em;
+        }
+
+        .resort-card .altitude {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .resort-card p {
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .country-flag {
+            display: inline-block;
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+
+        .alps-facts {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        .alps-facts h2 {
+            color: white;
+            border-bottom-color: white;
+        }
+
+        .facts-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .facts-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .facts-list li:before {
+            content: "⛰️";
+            position: absolute;
+            left: 0;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⛷️ Alpy 2025 ⛷️</h1>
+            <p>Objevte nejlepší alpská lyžařská střediska v Rakousku a Itálii</p>
+        </header>
+
+        <div class="info-section alps-facts">
+            <h2>Zajímavosti o Alpách</h2>
+            <ul class="facts-list">
+                <li>Alpy jsou nejvyšší a nejrozsáhlejší horské pásmo v Evropě</li>
+                <li>Nejvyšší hora: Mont Blanc (4 808 m n. m.)</li>
+                <li>Rozkládají se přes 8 zemí: Francie, Švýcarsko, Itálie, Monako, Lichtenštejnsko, Rakousko, Německo a Slovinsko</li>
+                <li>Celková délka: přibližně 1 200 km</li>
+                <li>Domov více než 30 000 druhů živočichů</li>
+            </ul>
+        </div>
+
+        <div class="info-section">
+            <h2><span class="country-flag">🇦🇹</span>Nejznámější střediska v Rakousku</h2>
+            <div class="resorts-grid">
+                <div class="resort-card">
+                    <h3>St. Anton am Arlberg</h3>
+                    <p class="altitude">1 304 - 2 811 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 305 km</p>
+                    <p><strong>Специálность:</strong> Mekka freeridingu, náročné terény</p>
+                    <p>Legendární středisko s vynikající après-ski scénou a jedny z nejlepších možností mimo sjezdovky.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Ischgl</h3>
+                    <p class="altitude">1 377 - 2 872 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 238 km</p>
+                    <p><strong>Специálность:</strong> Moderní lanovky, sněhová jistota</p>
+                    <p>Známé svými koncerty Top of the Mountain a výbornou gastronomií. Spojené s švýcarským Samnaun.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Kitzbühel</h3>
+                    <p class="altitude">800 - 2 000 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 233 km</p>
+                    <p><strong>Специálность:</strong> Hahnenkamm sjezd, luxus</p>
+                    <p>Prestižní středisko s legendárním závodem Hahnenkamm. Elegantní atmosféra a široká nabídka sjezdovek.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Sölden</h3>
+                    <p class="altitude">1 350 - 3 340 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 144 km</p>
+                    <p><strong>Специальность:</strong> Ledovcové lyžování, dlouhá sezóna</p>
+                    <p>Dva ledovce umožňují lyžování od září do května. Místo natáčení filmu James Bond Spectre.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Mayrhofen</h3>
+                    <p class="altitude">630 - 2 500 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 136 km</p>
+                    <p><strong>Специальность:</strong> Harakiri sjezdovka (78% sklon)</p>
+                    <p>Rozmanitý terén pro všechny úrovně, přístup k ledovci Hintertux. Živá atmosféra.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Saalbach-Hinterglemm</h3>
+                    <p class="altitude">1 003 - 2 096 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 270 km</p>
+                    <p><strong>Специальность:</strong> Skicircus, rodinné lyžování</p>
+                    <p>Jeden z největších lyžařských okruhů v Rakousku s výbornou infrastrukturou a zábavou.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <h2><span class="country-flag">🇮🇹</span>Nejznámější střediska v Itálii</h2>
+            <div class="resorts-grid">
+                <div class="resort-card">
+                    <h3>Cortina d'Ampezzo</h3>
+                    <p class="altitude">1 224 - 2 930 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 120 km</p>
+                    <p><strong>Специальность:</strong> Dolomity, zimní olympiáda 2026</p>
+                    <p>"Perla Dolomit" - luxusní středisko s nádherným výhledem na Dolomity. Hostitel OH 1956 a 2026.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Val Gardena / Gröden</h3>
+                    <p class="altitude">1 236 - 2 518 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 175 km (500 km Dolomiti Superski)</p>
+                    <p><strong>Специальность:</strong> Sella Ronda, světový pohár</p>
+                    <p>Součást největšího lyžařského karuselu světa Dolomiti Superski. Slavný sjezd Saslong.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Madonna di Campiglio</h3>
+                    <p class="altitude">1 550 - 2 504 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 150 km</p>
+                    <p><strong>Специальность:</strong> Elegance, noční lyžování</p>
+                    <p>Prestižní středisko v Brenta Dolomitech, oblíbené aristokracií. Noční slalom 3-Tre.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Livigno</h3>
+                    <p class="altitude">1 816 - 2 798 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 115 km</p>
+                    <p><strong>Специальность:</strong> Duty-free zóna, sněhová jistota</p>
+                    <p>Vysoká nadmořská výška zaručuje sníh. Bezccelní zóna s výhodnými cenami. Ideální pro rodiny.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Cervinia</h3>
+                    <p class="altitude">2 050 - 3 883 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 360 km (spojeno se Zermattem)</p>
+                    <p><strong>Специальность:</strong> Matterhorn, celoroční lyžování</p>
+                    <p>Pod Matterhornem, spojené se švýcarským Zermattem. Nejvýše položené sjezdovky v Evropě.</p>
+                </div>
+
+                <div class="resort-card">
+                    <h3>Courmayeur</h3>
+                    <p class="altitude">1 224 - 2 755 m n. m.</p>
+                    <p><strong>Sjezdovky:</strong> 100 km</p>
+                    <p><strong>Специальность:</strong> Mont Blanc, off-piste</p>
+                    <p>U paty Mont Blancu. Vynikající terén mimo sjezdovky a tradiční italská atmosféra.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Alpy Průvodce | Vytvořeno pro milovníky hor a lyžování</p>
+        </footer>
+    </div>
+</body>
+</html>
